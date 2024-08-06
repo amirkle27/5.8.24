@@ -44,6 +44,15 @@ print(f"new_dict: {new_dict}")
 
 #j#
 
-print(country_dict)
-del str("currency")
-print(country_dict)
+del new_dict ["currency"]
+print(new_dict)
+
+#k#
+
+new_dict.pop("area_kilometer")
+print(new_dict)
+
+#l(i),(ii)#
+
+new_dict.update({"national_sprt": "Soccer", "population_millions": 9.4})
+print(new_dict)
