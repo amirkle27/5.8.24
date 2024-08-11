@@ -1,9 +1,9 @@
 
-def memory_game (i1:str = "", i2:str = "") -> list:
+def memory_game (i1:str = "", i2:str = "") -> None:
     import random
-    letters: list = ['A','A','B','B','C','C','D','D','E','E','F','F']
     while True:
         try:
+            letters: list = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F']
             ans: str = str(input("Wanna play a new game? (yes/no)").lower())
             if ans not in ['yes','y','no','n']:
                 print("Please answer 'yes' or 'no'")
@@ -31,7 +31,6 @@ def memory_game (i1:str = "", i2:str = "") -> list:
                     letters.remove("")
             else:
                 print("Wow! you won!")
-                letters: list = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F']
         except:
             print("Wrong Key...")
 
