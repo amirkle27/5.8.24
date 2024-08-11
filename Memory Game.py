@@ -1,4 +1,3 @@
-
 def memory_game (i1:str = "", i2:str = "") -> None:
     import random
     while True:
