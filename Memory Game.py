@@ -1,3 +1,4 @@
+
 def memory_game (i1:str = "", i2:str = "") -> list:
     import random
     letters: list = ['A','A','B','B','C','C','D','D','E','E','F','F']
@@ -18,6 +19,9 @@ def memory_game (i1:str = "", i2:str = "") -> list:
                     print(f"You chose the letter '{letters[i1-1]}'")
                     i2: int = int(input(f"Please select another card between 1-{count}"))
                     print(f"You chose the letter '{letters[i2-1]}'")
+                    if i1 == i2:
+                        print(f"You already chose {i1}. Try something else")
+                        continue
                 except:
                     print("Wrong Key...")
                     continue
