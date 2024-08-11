@@ -28,7 +28,6 @@ def memory_game (i1:str = "", i2:str = "") -> None:
                     letters [i1-1], letters [i2-1] = "",""
                     letters.remove("")
                     letters.remove("")
-            else:
-                print("Wow! you won!")
+            print("Wow! you won!")
 
 memory_game()
