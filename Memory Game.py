@@ -20,14 +20,14 @@ def memory_game (i1:str = "", i2:str = "") -> None:
                     if i1 == i2:
                         print(f"You already chose {i1}. Try something else")
                         continue
+                    if letters[i1 - 1] == letters[i2 - 1]:
+                        letters = [letter for letter in letters if letters[i1 - 1] == letters[i2 - 1] and letter != letters [i1 - 1]]
+                        print("Yeah! You've found a pair! keep going!!")
+                    else:
+                        print("Not a match. Try again:")
                 except:
                     print("Wrong Key...")
                     continue
-                if letters[i1-1]==letters[i2-1] and letters:
-                    print("Yeah! You've found a pair! keep going!!")
-                    letters [i1-1], letters [i2-1] = "",""
-                    letters.remove("")
-                    letters.remove("")
             print("Wow! you won!")
 
 memory_game()
